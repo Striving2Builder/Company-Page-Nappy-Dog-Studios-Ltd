@@ -4,7 +4,8 @@ import ReactMarkdown from "react-markdown";
 import { blogPosts } from "../data/blogPosts";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ArrowLeft, Calendar, User, Tag } from "lucide-react";
+import SEO from "../components/SEO";
+import { ArrowLeft, Calendar, Tag } from "lucide-react";
 
 export default function BlogPostPage() {
   const { id } = useParams();
@@ -23,8 +24,33 @@ export default function BlogPostPage() {
     );
   }
 
+  const blogPostJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "image": post.image,
+    "datePublished": post.date,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nappy Dog Studios",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/nd logo.png"
+      }
+    },
+    "description": post.excerpt
+  };
+
   return (
     <div className="min-h-screen bg-stone-50">
+      <SEO 
+        title={post.title}
+        description={post.excerpt}
+        canonical={`https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/blog/${post.id}`}
+        ogType="article"
+        ogImage={post.image}
+        jsonLd={blogPostJsonLd}
+      />
       <Navbar />
       <main className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto">
@@ -41,10 +67,6 @@ export default function BlogPostPage() {
               <span className="flex items-center gap-1">
                 <Calendar size={12} />
                 {post.date}
-              </span>
-              <span className="flex items-center gap-1">
-                <User size={12} />
-                {post.author}
               </span>
             </div>
 

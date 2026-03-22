@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 import { blogPosts } from "../data/blogPosts";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ArrowRight, Calendar, User, Tag } from "lucide-react";
+import SEO from "../components/SEO";
+import { ArrowRight, Calendar, Tag } from "lucide-react";
 
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-stone-50">
+      <SEO 
+        title="Blog | Insights & Innovation"
+        description="Exploring the science behind AI, language acquisition, and holistic wellness. Read the latest insights from Nappy Dog Studios."
+        canonical="https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/blog"
+      />
       <Navbar />
       <main className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
@@ -48,10 +54,6 @@ export default function BlogPage() {
                       <span className="flex items-center gap-1">
                         <Calendar size={12} />
                         {post.date}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <User size={12} />
-                        {post.author}
                       </span>
                     </div>
                     <h2 className="text-2xl font-sans font-medium text-stone-900 mb-4 group-hover:text-stone-600 transition-colors">
