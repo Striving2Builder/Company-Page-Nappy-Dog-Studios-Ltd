@@ -7,14 +7,14 @@ export default function Products() {
       title: "Lingocapture",
       url: "https://www.Lingocapture.com",
       description: "Master languages through real-world discovery. Use our AR camera for contextual learning with instant AI insights, dive into a Smart Feed of situational and curriculum content, and level up your skills in the language learning Arcade.",
-      image: "/LC logo.png",
+      image: "/lc-logo.png",
       tags: ["AR Learning", "Smart Feed", "Language Arcade"],
     },
     {
       title: "Aurabase",
       url: "https://www.Aurabase.app",
       description: "A comprehensive AI-powered platform for holistic health tracking across mind, body, and spirit. Aurabase features a specialized AI Council of agents to provide deeply personalized guidance, helping you master your unique health and wellness journey.",
-      image: "/AB logo.png",
+      image: "/ab-logo.png",
       tags: ["Holistic Health", "AI Wellness Council", "Mind & Body"],
     },
   ];

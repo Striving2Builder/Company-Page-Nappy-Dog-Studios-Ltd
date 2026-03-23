@@ -39,7 +39,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-4 h-full">
           <div className="h-full flex items-center">
             <img 
-              src="/nd logo.png" 
+              src="/nd-logo.png" 
               alt="Nappy Dog Studios Logo" 
               className="h-20 w-auto object-contain"
               onError={(e) => {
