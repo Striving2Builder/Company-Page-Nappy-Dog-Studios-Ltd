@@ -13,8 +13,8 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Nappy Dog Studios",
-    "url": "https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app",
-    "logo": "https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/nd logo.png",
+    "url": "https://ndstudios.dev",
+    "logo": "https://ndstudios.dev/nd-logo.png",
     "founder": {
       "@type": "Person",
       "name": "Nicolas Ng"

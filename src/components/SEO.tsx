@@ -20,7 +20,7 @@ export default function SEO({
   const siteName = 'Nappy Dog Studios';
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
   const defaultDescription = 'AI-led indie app studio crafting intelligent mobile experiences.';
-  const siteUrl = 'https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app';
+  const siteUrl = 'https://ndstudios.dev';
 
   return (
     <Helmet>
