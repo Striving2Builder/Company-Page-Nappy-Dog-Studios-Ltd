@@ -76,7 +76,6 @@ export default function Products() {
                 >
                   Visit Website <ExternalLink className="w-4 h-4" />
                 </a>
-
                 {(product.appStoreUrl || product.googlePlayUrl) && (
                   <div className="mt-6 pt-6 border-t border-stone-100">
                     <p className="text-sm font-bold text-stone-900 mb-3">Download the app here:</p>
