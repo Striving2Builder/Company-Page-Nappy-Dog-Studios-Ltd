@@ -85,9 +85,13 @@ export default function Products() {
                           href={product.appStoreUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 bg-stone-900 text-white rounded-xl text-sm font-bold hover:bg-stone-800 transition-colors"
+                          className="inline-block hover:scale-[1.02] transition-transform"
                         >
-                          Apple App Store
+                          <img 
+                            src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" 
+                            alt="Download on the App Store" 
+                            className="h-[40px] w-auto" 
+                          />
                         </a>
                       )}
                       {product.googlePlayUrl && (
@@ -95,9 +99,13 @@ export default function Products() {
                           href={product.googlePlayUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 bg-stone-900 text-white rounded-xl text-sm font-bold hover:bg-stone-800 transition-colors"
+                          className="inline-block hover:scale-[1.02] transition-transform"
                         >
-                          Google Play
+                          <img 
+                            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+                            alt="Get it on Google Play" 
+                            className="h-[58px] w-auto -mt-[9px] -ml-2" 
+                          />
                         </a>
                       )}
                     </div>
