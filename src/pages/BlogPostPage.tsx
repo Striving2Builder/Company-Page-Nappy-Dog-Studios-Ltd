@@ -95,7 +95,7 @@ export default function BlogPostPage() {
                         <img
                           {...props}
                           className={`inline-block align-middle transition-transform hover:scale-105 ${
-                            isAppStore ? 'h-[44px] w-auto' : 'h-[60px] w-auto -mt-[10px] -ml-2'
+                            isAppStore ? 'h-[44px] w-auto' : 'h-[60px] w-auto -mt-[4px] -ml-2'
                           }`}
                         />
                       );
