@@ -10,6 +10,44 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "aurabase-official-launch",
+    title: "AuraBase is Live: Official Launch on Apple & Google Play Stores",
+    excerpt: "We are thrilled to announce that AuraBase is officially available for download on both iOS and Android. A major milestone for holistic health.",
+    date: "May 15, 2026",
+    image: "/ab-logo.png",
+    tags: ["AuraBase", "Product Launch", "iOS", "Android", "AI Wellness"],
+    content: `
+# AuraBase is Live: Official Launch on Apple & Google Play Stores
+
+Today marks a significant milestone in our journey at Nappy Dog Studios. We are incredibly proud to announce that **AuraBase** is now officially available for download on the **Apple App Store** and the **Google Play Store**.
+
+## A Note of Gratitude to Apple and Google
+
+We would like to extend our sincerest thanks to the review and developer relations teams at both Apple and Google. Their rigorous standards and detailed guidance throughout the submission process were instrumental in helping us ensure that AuraBase meets the highest benchmarks for **privacy, performance, and user experience**. Their feedback pushed us to refine our architecture and deliver a product that we are confident will provide immense value while strictly protecting user sovereignty over their health data.
+
+## To Our Testers: You Built This With Us
+
+To our dedicated community of **Alpha and Beta testers**—thank you. You were the first to live with the early builds, the ones who reported the elusive bugs, and the voices that provided the critical feedback we needed to shape AuraBase into the polished companion it is today. This launch is as much yours as it is ours.
+
+## The Journey Continues: What's Next?
+
+While today is a day for celebration, it is also just the beginning. We have a relentless roadmap of innovation planned for the near future. Keep an eye out for these upcoming features that will continue to redefine your wellness journey:
+
+- **5-to-7 Day Meal Planner:** A dynamically adaptive nutrition protocol that syncs with your recovery and performance goals.
+- **AI Fridge Scanner:** An innovative new way to interact with **Aria, your Global AI Chef**. Simply scan your ingredients, and Aria will generate macro-perfect recipes based on what you have on hand.
+
+The evolution of mind, body, and spirit is a lifelong quest, and we are honored to walk beside you.
+
+## Download AuraBase Today
+
+Start your evolution now. AuraBase is free to download on your favorite platform:
+
+[![Download on the App Store](https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg)](https://apps.apple.com/ca/app/aurabase-mind-body-tracker/id6760844634)
+
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.aurabase.mobile)
+`
+  },
+  {
     id: "contextual-acquisition-ar",
     title: "The Science of Contextual Acquisition: How AR Accelerates Language Learning",
     excerpt: "Research shows that visual cues and real-world context can increase vocabulary retention by up to 40%. Discover how AR is changing the game.",
