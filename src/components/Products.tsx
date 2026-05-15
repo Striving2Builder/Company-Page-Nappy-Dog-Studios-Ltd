@@ -90,7 +90,7 @@ export default function Products() {
                           <img 
                             src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" 
                             alt="Download on the App Store" 
-                            className="h-[40px] w-auto" 
+                            className="h-[44px] w-auto" 
                           />
                         </a>
                       )}
@@ -104,7 +104,7 @@ export default function Products() {
                           <img 
                             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
                             alt="Get it on Google Play" 
-                            className="h-[58px] w-auto -mt-[9px] -ml-2" 
+                            className="h-[54px] w-auto -mt-[5px] -ml-2" 
                           />
                         </a>
                       )}
