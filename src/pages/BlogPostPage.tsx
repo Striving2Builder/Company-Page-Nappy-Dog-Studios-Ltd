@@ -35,7 +35,7 @@ export default function BlogPostPage() {
       "name": "Nappy Dog Studios",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/nd logo.png"
+        "url": "https://ndstudios.dev/nd logo.png"
       }
     },
     "description": post.excerpt
@@ -46,7 +46,7 @@ export default function BlogPostPage() {
       <SEO 
         title={post.title}
         description={post.excerpt}
-        canonical={`https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/blog/${post.id}`}
+        canonical={`https://ndstudios.dev/blog/${post.id}`}
         ogType="article"
         ogImage={post.image}
         jsonLd={blogPostJsonLd}

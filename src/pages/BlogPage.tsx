@@ -12,7 +12,7 @@ export default function BlogPage() {
       <SEO 
         title="Blog | Insights & Innovation"
         description="Exploring the science behind AI, language acquisition, and holistic wellness. Read the latest insights from Nappy Dog Studios."
-        canonical="https://ais-dev-mignlaomiwktwl2gluq4zt-348326429922.us-east1.run.app/blog"
+        canonical="https://ndstudios.dev/blog"
       />
       <Navbar />
       <main className="pt-32 pb-20 px-6">
