@@ -104,7 +104,7 @@ export default function Products() {
                           <img 
                             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
                             alt="Get it on Google Play" 
-                            className="h-[54px] w-auto -mt-[2px] -ml-2" 
+                            className="h-[66px] w-auto -mt-[11px] -ml-3" 
                           />
                         </a>
                       )}
