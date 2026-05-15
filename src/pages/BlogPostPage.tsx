@@ -84,7 +84,28 @@ export default function BlogPostPage() {
             </div>
 
             <div className="markdown-body max-w-none">
-              <ReactMarkdown>{post.content}</ReactMarkdown>
+              <ReactMarkdown
+                components={{
+                  img: ({ node, ...props }) => {
+                    const isAppStore = props.src?.includes('badge-download-on-the-app-store');
+                    const isGooglePlay = props.src?.includes('en_badge_web_generic');
+
+                    if (isAppStore || isGooglePlay) {
+                      return (
+                        <img
+                          {...props}
+                          className={`inline-block align-middle transition-transform hover:scale-105 ${
+                            isAppStore ? 'h-[44px] w-auto' : 'h-[60px] w-auto -mt-[10px] -ml-2'
+                          }`}
+                        />
+                      );
+                    }
+                    return <img {...props} className="rounded-2xl border border-stone-200" />;
+                  }
+                }}
+              >
+                {post.content}
+              </ReactMarkdown>
             </div>
 
             <div className="mt-16 pt-12 border-t border-stone-200">

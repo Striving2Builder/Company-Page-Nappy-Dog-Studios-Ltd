@@ -42,9 +42,7 @@ The evolution of mind, body, and spirit is a lifelong quest, and we are honored 
 
 Start your evolution now. AuraBase is free to download on your favorite platform:
 
-[![Download on the App Store](https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg)](https://apps.apple.com/ca/app/aurabase-mind-body-tracker/id6760844634)
-
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.aurabase.mobile)
+[![Download on the App Store](https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg)](https://apps.apple.com/ca/app/aurabase-mind-body-tracker/id6760844634) [![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.aurabase.mobile)
 `
   },
   {
