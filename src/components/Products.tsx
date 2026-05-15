@@ -79,18 +79,18 @@ export default function Products() {
                 {(product.appStoreUrl || product.googlePlayUrl) && (
                   <div className="mt-6 pt-6 border-t border-stone-100">
                     <p className="text-sm font-bold text-stone-900 mb-3">Download the app here:</p>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex items-center gap-3">
                       {product.appStoreUrl && (
                         <a
                           href={product.appStoreUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block hover:scale-[1.02] transition-transform"
+                          className="hover:scale-105 transition-transform"
                         >
                           <img 
                             src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" 
                             alt="Download on the App Store" 
-                            className="h-[44px] w-auto" 
+                            className="h-[40px] w-auto block" 
                           />
                         </a>
                       )}
@@ -99,12 +99,12 @@ export default function Products() {
                           href={product.googlePlayUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block hover:scale-[1.02] transition-transform"
+                          className="hover:scale-105 transition-transform"
                         >
                           <img 
                             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
                             alt="Get it on Google Play" 
-                            className="h-[66px] w-auto -mt-[11px] -ml-3" 
+                            className="h-[60px] w-auto block" 
                           />
                         </a>
                       )}
