@@ -1,4 +1,4 @@
-import { Dog, Linkedin, Twitter, Github } from "lucide-react";
+import { Dog, Linkedin, Twitter, Github, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -37,14 +37,17 @@ export default function Footer() {
               An AI-led indie app studio dedicated to crafting intelligent mobile experiences that empower users.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/in/nicolasng/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all">
+              <a href="https://www.linkedin.com/in/nicolasng/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all" title="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all">
+              <a href="#" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all" title="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all">
+              <a href="#" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all" title="GitHub">
                 <Github className="w-5 h-5" />
+              </a>
+              <a href="https://music.youtube.com/channel/UC0DJH61-UHKjZ_XYw1sF1BQ?si=Aqp0v_sUcXOB6IIO" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white border border-stone-200 rounded-full flex items-center justify-center text-stone-600 hover:bg-stone-900 hover:text-white transition-all" title="YouTube Music Artist">
+                <Youtube className="w-5 h-5" />
               </a>
             </div>
           </div>

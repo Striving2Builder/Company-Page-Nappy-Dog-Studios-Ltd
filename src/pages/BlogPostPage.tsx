@@ -101,6 +101,42 @@ export default function BlogPostPage() {
                       );
                     }
                     return <img {...props} className="rounded-2xl border border-stone-200" />;
+                  },
+                  a: ({ node, children, ...props }) => {
+                    const href = props.href || "";
+                    if (href.includes("music.youtube.com/playlist") || href.includes("youtube.com/playlist")) {
+                      let listId = "";
+                      try {
+                        const urlObj = new URL(href);
+                        listId = urlObj.searchParams.get("list") || "";
+                      } catch (e) {
+                        const match = href.match(/[?&]list=([^#\&\?]+)/);
+                        if (match) listId = match[1];
+                      }
+                      if (listId) {
+                        return (
+                          <div className="my-8 aspect-video w-full max-w-3xl mx-auto rounded-[24px] overflow-hidden border border-stone-200 shadow-md">
+                            <iframe
+                              className="w-full h-full border-0"
+                              src={`https://www.youtube.com/embed/videoseries?list=${listId}`}
+                              title="YouTube Music Playlist"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            ></iframe>
+                          </div>
+                        );
+                      }
+                    }
+                    return (
+                      <a
+                        {...props}
+                        className="text-stone-900 underline hover:text-stone-600 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {children}
+                      </a>
+                    );
                   }
                 }}
               >
