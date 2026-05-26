@@ -35,7 +35,7 @@ export default function BlogPostPage() {
       "name": "Nappy Dog Studios",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ndstudios.dev/nd logo.png"
+        "url": "https://ndstudios.dev/nd-logo.png"
       }
     },
     "description": post.excerpt

@@ -30,6 +30,7 @@ export default function HomePage() {
       <SEO 
         title="AI-Led Indie App Studio"
         description="Nappy Dog Studios is an AI-led indie app studio dedicated to crafting intelligent mobile experiences that empower users. Founded by Nicolas Ng."
+        canonical="https://ndstudios.dev"
         jsonLd={organizationJsonLd}
       />
       <Navbar />

@@ -21,6 +21,7 @@ export default function SEO({
   const fullTitle = title ? `${title} | ${siteName}` : siteName;
   const defaultDescription = 'AI-led indie app studio crafting intelligent mobile experiences.';
   const siteUrl = 'https://ndstudios.dev';
+  const pageUrl = canonical || siteUrl;
 
   return (
     <Helmet>
@@ -32,11 +33,13 @@ export default function SEO({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description || defaultDescription} />
       <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={pageUrl} />
       {ogImage && <meta property="og:image" content={ogImage} />}
       
       {/* Twitter */}
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description || defaultDescription} />
+      <meta name="twitter:url" content={pageUrl} />
       {ogImage && <meta name="twitter:image" content={ogImage} />}
 
       {/* Structured Data */}
